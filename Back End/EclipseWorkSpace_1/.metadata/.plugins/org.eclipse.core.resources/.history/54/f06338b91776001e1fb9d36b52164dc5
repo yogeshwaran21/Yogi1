@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ 
+<h1>Insurance Agent Form</h1>
+ 
+<form action="processAgent.jsp" method="post">
+ 
+    <label for="agentName">Agent Name:</label>
+    <input type="text" id="agentName" name="agentName"><br><br>
+ 
+    <label for="agentID">Agent ID:</label>
+    <input type="text" id="agentID" name="agentID"><br><br>
+ 
+    <label for="agentNumber">Agent Number:</label>
+    <input type="text" id="agentNumber" name="agentNumber"><br><br>
+ 
+    <label for="insuranceType">Type of Insurance:</label>
+    <input type="text" id="insuranceType" name="insuranceType"><br><br>
+ 
+    <label for="joinDate">Date of Joining:</label>
+    <input type="date" id="joinDate" name="joinDate"><br><br>
+ 
+    <label for="salary">Salary:</label>
+    <input type="text" id="salary" name="salary"><br><br>
+ 
+    <input type="submit" value="Submit">
+</form>
+ 
+</body>
+</html>

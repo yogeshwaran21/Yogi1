@@ -1,0 +1,10 @@
+package work;
+
+public class CustomerReport {
+	Customer custList[]=new Customer[5] {
+	
+	public int addCustomer() {
+		
+	}
+}
+}

@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Health</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align:justify;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #333;
+        text-align: center;
+    }
+
+    .content {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    a:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<center>
+<div>
+    <h1>Health Insurance</h1>
+    </div>
+    <div class="container">
+    <p class="content">Life insurance is defined as a legally binding contract between a policyholder and an insurer in which the insurance company provides financial protection to the policyholder and pays a death benefit to the nominee when the insured dies. For a life insurance policy to remain in force, the policyholder must pay regular premiums over the period of time or pay a single premium upfront.</p>
+</div>
+<div>
+<br>
+<div>
+<a href="/lbenefit">Benefits</a>
+</div>
+<div>
+  <a href="/lfeature">Features</a>
+  </div>
+  </div>  
+</head>
+</html>

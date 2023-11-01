@@ -1,0 +1,138 @@
+package com.example.demo.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Customer {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int custId;
+	private String custFirstName;
+	private String custLastName;
+	private String custDob;
+	private int custAge;
+	private String custGender;
+	private String custEmailId;
+	private String custPhoneNumber;
+	private String custAddress;
+	private String custNationalId;
+	private String custMaritalStatus;
+	private String custOccupation;
+	private String custSmokingStatus;
+	private String custHealthInfo;
+	
+	public Customer(int custId, String custFirstName, String custLastName, String custDob, int custAge,
+			String custGender, String custEmailId, String custPhoneNumber, String custAddress, String custNationalId,
+			String custMaritalStatus, String custOccupation, String custSmokingStatus, String custHealthInfo) {
+		super();
+		this.custId = custId;
+		this.custFirstName = custFirstName;
+		this.custLastName = custLastName;
+		this.custDob = custDob;
+		this.custAge = custAge;
+		this.custGender = custGender;
+		this.custEmailId = custEmailId;
+		this.custPhoneNumber = custPhoneNumber;
+		this.custAddress = custAddress;
+		this.custNationalId = custNationalId;
+		this.custMaritalStatus = custMaritalStatus;
+		this.custOccupation = custOccupation;
+		this.custSmokingStatus = custSmokingStatus;
+		this.custHealthInfo = custHealthInfo;
+	}
+	
+	
+	public Customer() {
+		super();
+	}
+
+	
+	public int getCustId() {
+		return custId;
+	}
+	public void setCustId(int custId) {
+		this.custId = custId;
+	}
+	public String getCustFirstName() {
+		return custFirstName;
+	}
+	public void setCustFirstName(String custFirstName) {
+		this.custFirstName = custFirstName;
+	}
+	public String getCustLastName() {
+		return custLastName;
+	}
+	public void setCustLastName(String custLastName) {
+		this.custLastName = custLastName;
+	}
+	public String getCustDob() {
+		return custDob;
+	}
+	public void setCustDob(String custDob) {
+		this.custDob = custDob;
+	}
+	public int getCustAge() {
+		return custAge;
+	}
+	public void setCustAge(int custAge) {
+		this.custAge = custAge;
+	}
+	public String getCustGender() {
+		return custGender;
+	}
+	public void setCustGender(String custGender) {
+		this.custGender = custGender;
+	}
+	public String getCustEmailId() {
+		return custEmailId;
+	}
+	public void setCustEmailId(String custEmailId) {
+		this.custEmailId = custEmailId;
+	}
+	public String getCustPhoneNumber() {
+		return custPhoneNumber;
+	}
+	public void setCustPhoneNumber(String custPhoneNumber) {
+		this.custPhoneNumber = custPhoneNumber;
+	}
+	public String getCustAddress() {
+		return custAddress;
+	}
+	public void setCustAddress(String custAddress) {
+		this.custAddress = custAddress;
+	}
+	public String getCustNationalId() {
+		return custNationalId;
+	}
+	
+	public void setCustNationalId(String custNationalId) {
+		this.custNationalId = custNationalId;
+	}
+	public String getCustMaritalStatus() {
+		return custMaritalStatus;
+	}
+	public void setCustMaritalStatus(String custMaritalStatus) {
+		this.custMaritalStatus = custMaritalStatus;
+	}
+	public String getCustOccupation() {
+		return custOccupation;
+	}
+	public void setCustOccupation(String custOccupation) {
+		this.custOccupation = custOccupation;
+	}
+	public String getCustSmokingStatus() {
+		return custSmokingStatus;
+	}
+	public void setCustSmokingStatus(String custSmokingStatus) {
+		this.custSmokingStatus = custSmokingStatus;
+	}
+	public String getCustHealthInfo() {
+		return custHealthInfo;
+	}
+	public void setCustHealthInfo(String custHealthInfo) {
+		this.custHealthInfo = custHealthInfo;
+	}
+}

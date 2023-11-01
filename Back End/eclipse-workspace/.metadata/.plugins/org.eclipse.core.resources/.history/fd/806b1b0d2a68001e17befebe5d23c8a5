@@ -1,0 +1,20 @@
+package work;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
+
+public class Streams {
+
+	public static void main(String[] args) {
+		List<Integer> num=new ArrayList<Integer>();
+		num.add(2);
+		num.add(8);
+		num.add(6);
+		num.add(10);
+		num.add(4);
+		
+		System.out.println(IntStream.of(0).average().getAsDouble());
+	}
+
+}

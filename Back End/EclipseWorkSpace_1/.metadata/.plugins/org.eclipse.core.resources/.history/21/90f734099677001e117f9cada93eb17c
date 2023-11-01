@@ -1,0 +1,40 @@
+package com.example.demo.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.model.Customer;
+import com.example.demo.service.CustomerService;
+
+@Controller
+@RequestMapping("/customers")
+public class CustomerController {
+
+    private CustomerService customerService;
+
+    @Autowired
+    public CustomerController(CustomerService customerService) {
+        this.customerService = customerService;
+    }
+
+    @GetMapping("/all")
+    public String getAllCustomers(Model model) {
+        List<Customer> customers = (List<Customer>) customerService.getAllCustomers();
+        model.addAttribute("customers", customers);
+        return "customer-list"; 
+    }
+
+    @GetMapping("/{id}")
+    public String getCustomerById(@PathVariable int id, Model model) {
+        Optional<Customer> customer = customerService.getCustomerById(id);
+        model.addAttribute("customer", customer);
+        return "customer-details"; 
+    }
+}

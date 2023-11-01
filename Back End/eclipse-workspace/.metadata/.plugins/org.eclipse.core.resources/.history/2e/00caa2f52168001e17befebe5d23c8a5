@@ -1,0 +1,29 @@
+package work;
+
+import java.util.Scanner;
+
+
+public class PizzaHut {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer();
+		
+//		customer.setCustNo(1);
+//		customer.setCustName("");
+//		customer.setCustAddr("");
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		scan.nextInt();
+		scan.nextLine();
+		System.out.println("Enter the Name");
+		scan.nextLine();
+		System.out.println("Enter the Address");
+		scan.nextLine();
+		
+		customer.display();
+	}
+}
+	
+
+

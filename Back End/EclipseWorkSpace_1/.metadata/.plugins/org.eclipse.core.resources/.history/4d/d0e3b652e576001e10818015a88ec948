@@ -1,0 +1,58 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+
+
+public  class HomeController {
+	@GetMapping("/homepage")
+	public String getHomePage() {
+		return "HomePage";
+		}
+	@GetMapping("/login")
+	public String getLogin() {
+		return "Login";
+		}
+	@PostMapping("/login")
+	@ResponseBody
+public String validateUser() {
+	return "Login Successful";
+	}
+	
+	
+	@GetMapping("/life")
+public String getLife() {
+	return "Life";
+	}
+		
+	@GetMapping("/health")
+	public String getHealth() {
+		return "Health";
+		}
+	@GetMapping("/child")
+	public String getChild(){
+		return "Child";
+		}
+	@GetMapping("/vehicle")
+	public String getVehicle() {
+		return "Vehicle";
+		}
+	@GetMapping("/home")
+	public String getHome() {
+		return "Home";
+		}
+	@GetMapping("/agentform")
+	public String getAgentForm() {
+		return "AgentForm";
+		}
+	@GetMapping("/agentdetail")
+	public String getAgentDetail() {
+		return "AgentDetail";
+		}	
+		
+}

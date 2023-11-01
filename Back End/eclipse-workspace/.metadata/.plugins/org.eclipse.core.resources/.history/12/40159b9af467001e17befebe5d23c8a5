@@ -1,0 +1,17 @@
+package work;
+import java.util.*;
+
+public class ArrayListDemo {
+	public static void main(String[] args) {
+		 Students student = new Students();
+	        student.setNames();
+	        student.searchName("Yogesh");
+	        student.searchName(1);
+	        System.out.println("employee names:");
+	        student.printNames();
+	        student.removeName("Kishore");
+	        System.out.println("Updated employee names:");
+	        student.printNames();
+
+	}
+}

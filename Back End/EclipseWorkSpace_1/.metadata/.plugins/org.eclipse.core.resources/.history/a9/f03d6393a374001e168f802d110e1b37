@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Benefits</title>
+<style>
+h1{
+color:red
+}
+.container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align:justify;
+    }
+</style>
+</head>
+<body>
+<center>
+<h1>Benefits</h1>
+
+<h2>Financial Security</h2>
+<div class="container"></div>
+<h2>Wealth Creation </h2>
+<div class="container"></div>
+<h2>Tax Savings </h2>
+<div class="container"></div>
+<h2>Buy Young, Save More</h2>
+<div class="container"></div>
+<h2>Death benefit</h2>
+<div class="container"></div>
+<div></div>
+<center>
+</center>
+</body>
+</html>

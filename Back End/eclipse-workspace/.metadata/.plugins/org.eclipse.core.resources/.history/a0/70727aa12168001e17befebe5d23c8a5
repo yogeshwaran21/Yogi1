@@ -1,0 +1,17 @@
+package work;
+
+public class PizzaHut {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer();
+		
+		customer.setCustNo(1);
+		customer.setCustName("Yogi");
+		customer.setCustAddr("xyz");
+		
+		customer.display();
+	}
+}
+	
+
+

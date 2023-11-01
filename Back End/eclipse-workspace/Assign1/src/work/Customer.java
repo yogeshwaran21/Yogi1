@@ -1,0 +1,47 @@
+package work;
+import java.util.Scanner;
+
+public class Customer {
+	private int custNo;
+	private String custName;
+	private String custAddr;
+
+	public Customer() {
+		this.custNo = 1;
+		this.custName = "Yogi";
+		this.custAddr = "xyz";
+	}
+
+	public Customer(int custNo, String custName, String custAddr) {
+		super();
+		this.custNo = custNo;
+		this.custName = custName;
+		this.custAddr = custAddr;
+	}
+
+	public void display() {
+		System.out.println("Customer Number: " + custNo);
+		System.out.println("Customer Name: " + custName);
+		System.out.println("Customer Address: " + custAddr);
+	}
+	
+	public void setCustNo(int custNo) {
+		this.custNo = custNo;
+	}
+	public int getCustNo() {
+		return custNo;
+	}
+	public void setCustName(String custName) {
+		this.custName = custName;
+	}
+	public String getCustName() {
+		return custName;
+	}
+	public void setCustAddr(String custAddr) {
+		this.custAddr = custAddr;
+	}
+	public String getCustAddr() {
+		return custAddr;
+	}
+	
+}

@@ -1,0 +1,33 @@
+package com.example.demo.controller;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class HomeController {
+
+    @RequestMapping("/exchange")
+    public String homePage() {
+        return "Exchange";
+    }
+
+    @PostMapping("/exchange")
+    public String convertCurrency(
+            @RequestParam String fromCurrency,
+            @RequestParam String toCurrency,
+            @RequestParam double amount,
+            Model model) {
+        
+        double exchangeRate = 0.74;
+        double convertedAmount = amount * exchangeRate;
+
+        model.addAttribute("fromCurrency", fromCurrency);
+        model.addAttribute("toCurrency", toCurrency);
+        model.addAttribute("amount", amount);
+        model.addAttribute("convertedAmount", convertedAmount);
+
+        return "Exchange";
+    }
+}

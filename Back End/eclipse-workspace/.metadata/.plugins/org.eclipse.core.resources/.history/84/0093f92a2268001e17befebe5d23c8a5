@@ -1,0 +1,10 @@
+package work;
+import java.util.Scanner;
+public class PizzaHut {
+
+	public static void main(String[] args) {
+			}
+}
+	
+
+
